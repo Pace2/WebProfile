@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+.logo img {
+    width: 60px;
+    display: flex;
+}
+
+header {
+    height: fit-content;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5rem 0rem;
+    background-color: white;
+    border-bottom: 2px solid orangered;
+    box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.35);
+    z-index: 99;
+}
+
+nav {
+
+    width: 100%;
+    height: fit-content;
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* position: absolute; */
+
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: black;
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+#btn-ul{
+    display: none;
+}
+ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: grey;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+button {
+    border: none;
+    padding: 12px 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sign {
+    background-color: orangered;
+    color: white;
+    border-radius: 15px;
+    transition: all .3s ease;
+}
+
+.sign:hover {
+    opacity: .7;
+}
+
+.login {
+    color: orangered;
+    background: none;
+    border-radius: 15px;
+    transition: all .3s ease;
+}
+
+.login:hover {
+    opacity: .7;
+}
+
+/* main content */
+main #toglehome {
+    padding-top: 100px;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 80px;
+    margin-top: 20px;
+}
+
+main p {
+    text-align: justify;
+    margin: 0px 12px;
+}
+
+main .pemandangan {
+    margin-top: 30px;
+}
+
+main .pemandangan img {
+    border-radius: 15px;
+    width: 75%;
+    height: 400px;
+    box-shadow: 10px 10px 14px 1px rgba(0, 0, 0, 0.42);
+    -webkit-box-shadow: 10px 10px 14px 1px rgba(0, 0, 0, 0.42);
+    -moz-box-shadow: 10px 10px 14px 1px rgba(0, 0, 0, 0.42);
+}
+
+main .pemandangan {
+    display: flex;
+}
+
+main .pemandangan .manusia {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+main .pemandangan .manusia1 {
+    display: flex;
+    margin: 25px;
+}
+
+main .pemandangan .manusia1 .deskripsi p {
+    margin: 0;
+    font-size: 10px;
+}
+
+main .pemandangan .manusia1 .deskripsi {
+    padding-left: 10px;
+}
+
+main .pemandangan .manusia1 img {
+    background-size: cover;
+    width: 50px;
+    margin: 0px;
+    height: 50px;
+    box-shadow: none;
+}
+
+main .card {
+    margin-top: 30px;
+    background-color: orange;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+main .card .cardcontent {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+
+main .card .cardcontent .cardtitle {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+main .pemisahcontent {
+    color: white;
+}
+
+main .card .cardcontent p {
+    width: 60%;
+    /* padding: 20px; */
+    text-align: left;
+    margin: 0px;
+}
+
+main .card .cardcontent h3 span {
+    color: white;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: orangered;
+    padding: 20px;
+    color: white;
+    margin-top: 100px;
+}
+
+/* Hamburger Menu */
+
+
+
+
+/* Responsive Design Section */
+@media only screen and (max-width: 600px) {
+    main{
+        width: 90%;
+    }
+    .pemandangan {
+        width: 100%;
+        flex-direction: column;
+    }
+    .judul p{
+        margin-top: 1rem;
+    }
+    header {
+        padding: 1rem .5rem;
+        z-index: 99;
+    }
+
+    main .pemandangan img {
+        border-radius: 15px;
+        width: 100%;
+        height: 250px;
+    }
+
+    .judul h1 {
+        font-size: 50px;
+        line-height: 2.5rem;
+    }
+
+    main .pemandangan .manusia {
+        flex-direction: column;
+        margin-top: 2rem;
+        gap: 1rem;
+        width: 100%;
+    }
+    main .pemandangan .manusia .manusia1 .deskripsi{
+        margin: .5rem;
+    }
+    .btn {
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+    main .pemandangan .manusia1 {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        width: 100%;
+        margin: 0;
+    }
+
+    main .pemandangan .manusia1 .deskripsi {
+        padding: 0;
+    }
+
+    nav {
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    ul {
+        width: 100%;
+        background: whitesmoke;
+        top: 94px;
+        flex-direction: column;
+        position: absolute;
+        left: -100% ;
+        padding: 0;
+        text-align: center;
+        transition: all .5s;
+        height: 100vh;
+        gap: 1.5rem;
+
+    }
+    main .card .cardcontent p{
+        text-align: justify !important;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    nav ul li {
+        padding: .5rem;
+        width: 100%;
+    }
+
+    nav ul li:nth-child(1) {
+        margin-top: 2rem;
+    }
+
+    nav ul li:hover {
+        background-color: orangered;
+
+    }
+
+    nav ul li:hover a {
+        color: whitesmoke;
+
+    }
+
+
+    #check:checked ~ #isi_nav {
+        left: 0;
+    }
+
+    .checkbtn {
+        display: block;
+
+    }
+    #btn-ul{
+        display: block;
+    }
+    .btn{
+        display: none;
+    }
+    .logo {
+        font-size: 30px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    main .cardcontent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .card .cardcontent p {
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+    }
+
+}

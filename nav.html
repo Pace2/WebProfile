@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="nav.css" />
+    <title>Navbar</title>
+  </head>
+
+  <body>
+    <nav class="container">
+      <div class="wrapper">
+        <div class="navbar-logo">
+          <a href="#" class="logo-text">PACE X TKJ 1 </a>
+        </div>
+        <div id="menu-toggle" class="humberger">
+          <input type="checkbox" id="toggle" onclick="menuToggle()" />
+          <span class="top-bar"></span>
+          <span class="middle-bar"></span>
+          <span class="bottom-bar"></span>
+        </div>
+        <ul id="navbar-nav" class="navbar-nav hidden">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About me </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">My project</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn-primary">Get Contact</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <script src="nav.js"></script>
+  </body>
+</html>
